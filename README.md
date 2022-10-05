@@ -11,7 +11,8 @@ A repository to keep track of my progress with the React Javascript library.
 
 ### Useful information:
 
-A React container component that renders its children without adding any additional DOM nodes.
+#### React.fragment:
+* A React container component that renders its children without adding any additional DOM nodes.
 This can be used for returning multiple adjacent elements without wrapping them in an unnecessary
 element. For example:
 
@@ -22,7 +23,8 @@ element. For example:
 </React.Fragment>
 ```
 
-Fragments can also be created by using an empty tag, rather than the Fragment export from
+#### Conditional Rendering: 
+* Fragments can also be created by using an empty tag, rather than the Fragment export from
 React. For example:
 ```javascript
 <>
