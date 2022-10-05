@@ -9,7 +9,7 @@ A repository to keep track of my progress with the React Javascript library.
 
 * Whenever you're importing a function, make sure the first letter in its name is capitalized! 
 
-### Useful information:
+### Definitions:
 
 #### React.fragment:
 * A React container component that renders its children without adding any additional DOM nodes.
