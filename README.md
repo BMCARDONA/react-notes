@@ -2,12 +2,12 @@
 A repository to keep track of my progress with the React Javascript library. 
 
 
-## JSX 
+# JSX 
 * To export a default function, you need to write (in the file in which you'll be importing the default function) something similar to "import NewApp from './tutorial/jsx.js'." 
   * Notice that NewApp is not surrounded by curly braces.  
 * Whenever you're importing a function, make sure the first letter in its name is capitalized! 
 
-#### React.fragment:
+### React.fragment:
 * A React container component that renders its children without adding any additional DOM nodes.
 This can be used for returning multiple adjacent elements without wrapping them in an unnecessary
 element. For example:
@@ -19,7 +19,7 @@ element. For example:
 </React.Fragment>
 ```
 
-#### Conditional Rendering: 
+### Conditional Rendering: 
 * Fragments can also be created by using an empty tag, rather than the Fragment export from
 React. For example:
 ```javascript
@@ -30,8 +30,8 @@ React. For example:
 ```
 
 
-## Props
-#### Props:
+# Props
+### Props:
 * A JavaScript object passed as a parameter to functional components, containing all of the key-value
 pairs that were passed as attributes to the component. For example, given this JSX:
 ```javascript
