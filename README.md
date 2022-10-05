@@ -3,8 +3,6 @@ A repository to keep track of my progress with the React Javascript library.
 
 
 ## JSX 
-
-### Notes:
 * To export a default function, you need to write (in the file in which you'll be importing the default function) something similar to "import NewApp from './tutorial/jsx.js'." 
   * Notice that NewApp is not surrounded by curly braces.  
 * Whenever you're importing a function, make sure the first letter in its name is capitalized! 
@@ -31,3 +29,21 @@ React. For example:
 </>
 ```
 
+
+## Props
+#### Props:
+* A JavaScript object passed as a parameter to functional components, containing all of the key-value
+pairs that were passed as attributes to the component. For example, given this JSX:
+```javascript
+<MyComponent message="hello" number={42} />
+```
+
+The MyComponent function would take in props with two key-value pairs:
+```javascript
+function MyComponent(props) {
+ console.log(props.message); // "hello"
+ console.log(props.number); // 42
+ return <h1>Hello World!</h1>;
+```
+
+Learn more: https://reactjs.org/docs/components-and-props.html
