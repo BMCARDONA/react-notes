@@ -1,6 +1,10 @@
 
 import './App.css';
-import {ShortCircuitEvaluation, UseProps, Center} from './tutorial/jsx.js'
+import {
+  ShortCircuitEvaluation, 
+  UseProps, 
+  Center,
+  Styling} from './tutorial/jsx.js'
 
 function App() {
   return (
@@ -8,6 +12,7 @@ function App() {
       <ShortCircuitEvaluation />
       <UseProps />
       <Center />
+      <Styling />
     </div>
   );
 }

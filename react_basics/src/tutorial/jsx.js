@@ -34,8 +34,16 @@ function UseProps() {
 }
 
 function Center() {
-  return <p className="center"> Hello World</p>
+  return <p className="center">This text is centered.</p>
+}
+
+function Styling() {
+  return <p style={{
+    color: 'red',
+    textAlign: 'center',
+    fontSize: '48px'
+  }}>This is some nice styling!</p>
 }
 
 
-export {ShortCircuitEvaluation, UseProps, Center};
+export {ShortCircuitEvaluation, UseProps, Center, Styling};
