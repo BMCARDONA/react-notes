@@ -1,18 +1,11 @@
 
 import './App.css';
-import {
-  ShortCircuitEvaluation, 
-  UseProps, 
-  Center,
-  Styling} from './tutorial/jsx.js'
+import CommentApp from './tutorial/props.js'
 
 function App() {
   return (
     <div>
-      <ShortCircuitEvaluation />
-      <UseProps />
-      <Center />
-      <Styling />
+      <CommentApp />
     </div>
   );
 }
