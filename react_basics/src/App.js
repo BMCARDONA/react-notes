@@ -1,6 +1,6 @@
 
 import './App.css';
-import NewApp from './tutorial_jsx.js'
+import NewApp from './tutorial/jsx.js'
 
 function App() {
   return (
