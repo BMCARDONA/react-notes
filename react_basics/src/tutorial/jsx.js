@@ -1,6 +1,8 @@
 
+import './jsx.css'
 
-export default function NewApp() {
+
+function ShortCircuitEvaluation() {
   const error = true;
   const number = true;
   return (
@@ -16,3 +18,24 @@ export default function NewApp() {
 }
 
 
+function UseProps() {
+  const props = {
+    id: "input",
+    type: "text",
+    maxLength: "3"
+  }
+  return (
+    <>
+      <label htmlFor = "input">Input: </label>
+      {/* We can combine {...props} with standard syntax */}
+      <input {...props} placeholder = "user" />
+    </>
+  )
+}
+
+function Center() {
+  return <p className="center"> Hello World</p>
+}
+
+
+export {ShortCircuitEvaluation, UseProps, Center};

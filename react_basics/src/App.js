@@ -1,11 +1,13 @@
 
 import './App.css';
-import NewApp from './tutorial/jsx.js'
+import {ShortCircuitEvaluation, UseProps, Center} from './tutorial/jsx.js'
 
 function App() {
   return (
     <div>
-      <NewApp />
+      <ShortCircuitEvaluation />
+      <UseProps />
+      <Center />
     </div>
   );
 }
