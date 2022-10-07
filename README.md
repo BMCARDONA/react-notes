@@ -47,3 +47,7 @@ function MyComponent(props) {
 ```
 
 Learn more: https://reactjs.org/docs/components-and-props.html
+
+# Event-Driven Programming
+### SyntheticEvent
+* The object type passed to React event handler functions. Synthetic events generally work the same as native events, but with more consistency across browsers.
