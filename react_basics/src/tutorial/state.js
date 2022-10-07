@@ -1,5 +1,6 @@
 import { useReducer } from "react";
 
+// state comes from state, action from dispatch
 function reducer(state, action) {
   switch (action.type) {
     case 'increment': 
