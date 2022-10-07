@@ -1,14 +1,14 @@
 
 
-function HelloApp() {
-  return (
-    <>
-      <Hello />
-      <Hello name="Bradley" />
-      <Hello name="Bella" />
-    </>
-  )
-}
+// function HelloApp() {
+//   return (
+//     <>
+//       <Hello />
+//       <Hello name="Bradley" />
+//       <Hello name="Bella" />
+//     </>
+//   )
+// }
 
 // Instead of props, we can use {name} via destructuring 
 function Hello({name = 'User'}) {
