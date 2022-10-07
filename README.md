@@ -51,3 +51,68 @@ Learn more: https://reactjs.org/docs/components-and-props.html
 # Event-Driven Programming
 ### SyntheticEvent
 * The object type passed to React event handler functions. Synthetic events generally work the same as native events, but with more consistency across browsers.
+
+# State
+
+### State
+* Data specific to an instance of a component that persists between renders and causes re-renders when changed.
+
+### Hook
+* A JavaScript function used to "hook" into React features such as state and the larger component lifecycle. The
+names of hooks always begin with use, and they cannot be called conditionally.
+
+### useState
+* A React hook for creating stateful components. The useState function takes in an initial state value (or a
+function that returns that initial value), and it returns an array with two elements: the current state value and a
+setter function. For example:
+```javascript
+1 const [number, setNumber] = useState(42);
+```
+Learn more: https://reactjs.org/docs/hooks-state.html
+
+### useReducer
+* An alternative React hook for creating stateful components, oftentimes used for more complex state. The
+useReducer function takes in a reducer function and the initial state. It returns an array with two elements: the
+current state value and a dispatch function. The reducer function takes in the previous state and an action object as parameters, then it returns the new state. Usually the action object will have a type property, which will be used in a switch statement. For example:
+```javascript
+function reducer(state, action) {
+ switch (action.type) {
+  case 'increment':
+    return {count: state.count + action.num};
+  case 'decrement':
+    return {count: state.count - action.num};
+  default:
+    throw new Error('Unknown action type');
+ }
+ ```
+ Learn more: https://reactjs.org/docs/hooks-reference.html#usereducer
+
+The dispatch function will then take in an object, which will be passed as the action to the reducer function. For
+example:
+```javascript
+const [state, dispatch] = useReducer(reducer, {
+ count: 0
+});
+return (
+ <button onClick={() => dispatch({
+ type: 'increment',
+ num: 1
+ })}>Increment</button>
+);
+```
+
+### Lifting State Up
+* A common React pattern of moving shared state up to the lowest common ancestor component in the tree. This
+allows for a single component to keep track of the state and pass the current value and setter function down
+through props
+Learn more: https://reactjs.org/docs/lifting-state-up.html
+
+### Controlled Component
+* A pattern of using React state to control the current state of an input, rather than allowing the native elements to
+control their own state (known as an uncontrolled component). For example, an input can be controlled via the
+value and onChange props (note that in React, onChange works the same as onInput ). For example:
+```javascript
+const [value, setValue] = useState('');
+return <input value={value} onChange={e => setValue(e.target.value)} />;
+```
+Learn more: https://reactjs.org/docs/forms.html#controlled-components
