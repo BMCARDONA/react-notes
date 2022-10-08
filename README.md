@@ -4,8 +4,8 @@ A repository to keep track of my progress with the React Javascript library.
 * [JSX](#JSX)
 * [Props](#Props)
 * [Event-driven Programming](#Event-driven-Programming)
-* [State](#run)
-* [Component Lifecycle](#reading-material)
+* [State](#state)
+* [Component Lifecycle](#Component-Lifecycle)
 
 
 # JSX 
@@ -123,7 +123,7 @@ return <input value={value} onChange={e => setValue(e.target.value)} />;
 ```
 Learn more: https://reactjs.org/docs/forms.html#controlled-components
 
-# Component Lifecycle
+# Component-Lifecycle
 ### Component Lifecycle
 * The different stages that an instance of a component goes through. There are three primary stages
 to the React lifecycle:
