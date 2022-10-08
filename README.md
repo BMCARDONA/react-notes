@@ -5,7 +5,6 @@ A repository to keep track of my progress with the React Javascript library.
   - [React.fragment](###React.fragment)
   - [Conditional Rendering](###Conditional-Rendering)
 * [Props](#Props)
-  - []()
   - [Props](###Props)
 * [Event-driven Programming](#Event-driven-Programming)
   - [Synthetic Event](###Synthetic-Event)
