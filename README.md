@@ -3,10 +3,23 @@ A repository to keep track of my progress with the React Javascript library.
 
 * [JSX](#JSX)
   - [React.fragment](###React.fragment)
+  - [Conditional Rendering](###Conditional-Rendering)
 * [Props](#Props)
+  - []()
+  - [Props](###Props)
 * [Event-driven Programming](#Event-driven-Programming)
+  - [Synthetic Event](###Synthetic-Event)
 * [State](#state)
+  - [State](###State)
+  - [Hook](###Hook)
+  - [useState](###useState)
+  - [useReducer](###useReducer)
+  - [Lifting State Up](###Lifting-State-Up)
+  - [Controlled Component](###Controlled-Component)
 * [Component Lifecycle](#Component-Lifecycle)
+  - [Component Lifestyle](###Component-Lifecycle)
+  - [useEffect](###useEffect)
+  - [useLayoutEffect](###useLayoutEffect)
 
 
 # JSX 
@@ -26,7 +39,7 @@ element. For example:
 </React.Fragment>
 ```
 
-### Conditional Rendering: 
+### Conditional-Rendering: 
 * Fragments can also be created by using an empty tag, rather than the Fragment export from
 React. For example:
 ```javascript
@@ -56,11 +69,10 @@ function MyComponent(props) {
 Learn more: https://reactjs.org/docs/components-and-props.html
 
 # Event-Driven-Programming
-### SyntheticEvent
+### Synthetic-Event
 * The object type passed to React event handler functions. Synthetic events generally work the same as native events, but with more consistency across browsers.
 
 # State
-
 ### State
 * Data specific to an instance of a component that persists between renders and causes re-renders when changed.
 
@@ -108,13 +120,13 @@ return (
 );
 ```
 
-### Lifting State Up
+### Lifting-State-Up
 * A common React pattern of moving shared state up to the lowest common ancestor component in the tree. This
 allows for a single component to keep track of the state and pass the current value and setter function down
 through props
 Learn more: https://reactjs.org/docs/lifting-state-up.html
 
-### Controlled Component
+### Controlled-Component
 * A pattern of using React state to control the current state of an input, rather than allowing the native elements to
 control their own state (known as an uncontrolled component). For example, an input can be controlled via the
 value and onChange props (note that in React, onChange works the same as onInput ). For example:
@@ -125,7 +137,7 @@ return <input value={value} onChange={e => setValue(e.target.value)} />;
 Learn more: https://reactjs.org/docs/forms.html#controlled-components
 
 # Component-Lifecycle
-### Component Lifecycle
+### Component-Lifecycle
 * The different stages that an instance of a component goes through. There are three primary stages
 to the React lifecycle:
  - 1. Mounting: The component renders for the first time.
