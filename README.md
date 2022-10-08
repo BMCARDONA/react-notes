@@ -1,7 +1,8 @@
 # react-notes
-A repository to keep track of my progress with the React Javascript library. 
+A repository to keep track of my progress with the React Javascript library.  
 
 * [JSX](#JSX)
+- * [React.fragment](###React.fragment)
 * [Props](#Props)
 * [Event-driven Programming](#Event-driven-Programming)
 * [State](#state)
